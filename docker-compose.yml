@@ -1,11 +1,8 @@
-version: "3.9"
-
 services:
 
   postgres:
     image: postgres:16
     container_name: homelab-postgres
-
     restart: always
 
     environment:
@@ -19,13 +16,17 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
 
-    api: 
-      build: ./api/homelab.api
-      container_name: homelab-api
-      ports:
-        - "5000:8080"
-      depends_on:
-        - postgres
-        
+
+  api:
+    build: ./api/homelab.api
+    container_name: homelab-api
+
+    ports:
+      - "5000:8080"
+
+    depends_on:
+      - postgres
+
+
 volumes:
   postgres_data:
