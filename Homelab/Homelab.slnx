@@ -1,12 +1,16 @@
 <Solution>
-  <Folder Name="/consumers/">
-    <Project Path="consumers/homelab.api/Homelab.Api.csproj" />
+  <Folder Name="/src/" />
+  <Folder Name="/src/consumers/">
+    <Project Path="src/Consumers/Homelab.Api/Homelab.Api.csproj" />
   </Folder>
-  <Folder Name="/core/">
-    <Project Path="core/homelab.application/Homelab.Application.csproj" />
-    <Project Path="core/homelab.domain/Homelab.Domain.csproj" />
+  <Folder Name="/src/core/">
+    <Project Path="src/Core/Homelab.Application/Homelab.Application.csproj" />
+    <Project Path="src/Core/Homelab.Domain/Homelab.Domain.csproj" />
   </Folder>
-  <Folder Name="/infrastructure/">
-    <Project Path="infrastructure/homelab.data/Homelab.Data.csproj" Id="3c0c5844-aa5d-45e5-86b5-9eef73798349" />
+  <Folder Name="/src/infrastructure/">
+    <Project Path="src/Infrastructure/Homelab.Data/Homelab.Data.csproj" />
+  </Folder>
+  <Folder Name="/test/">
+    <Project Path="test/Homelab.Test/Homelab.Test.csproj" Id="d8aa9895-1b61-4120-aac6-5e879e810bb0" />
   </Folder>
 </Solution>
