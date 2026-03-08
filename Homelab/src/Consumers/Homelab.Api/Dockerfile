@@ -11,9 +11,10 @@ WORKDIR /src
 
 
 COPY ["Homelab.Api.csproj", "."]
-COPY ["../Core/Homelab.Application/Homelab.Application.csproj", "../Core/Homelab.Application/"]
-COPY ["../Core/Homelab.Domain/Homelab.Domain.csproj", "../Core/Homelab.Domain/"]
-COPY ["../Infrastructure/Homelab.Data/Homelab.Data.csproj", "../Infrastructure/Homelab.Data/"]
+COPY src/Consumers/Homelab.Api/Homelab.Api.csproj src/Consumers/Homelab.Api/
+COPY src/Core/Homelab.Application/Homelab.Application.csproj src/Core/Homelab.Application/
+COPY src/Core/Homelab.Domain/Homelab.Domain.csproj src/Core/Homelab.Domain/
+COPY src/Infrastructure/Homelab.Data/Homelab.Data.csproj src/Infrastructure/Homelab.Data/
 RUN dotnet restore "./Homelab.Api.csproj"
 
 COPY . .
