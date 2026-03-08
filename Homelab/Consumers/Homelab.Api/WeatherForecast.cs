@@ -1,4 +1,4 @@
-namespace homelab.api
+namespace Homelab.Api
 {
     public class WeatherForecast
     {

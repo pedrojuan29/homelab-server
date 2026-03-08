@@ -18,7 +18,7 @@ services:
 
 
   api:
-    build: ./api/homelab.api
+    build: ./Homelab/Consumers/Homelab.Api
     container_name: homelab-api
 
     ports:

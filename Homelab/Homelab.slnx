@@ -1,0 +1,12 @@
+<Solution>
+  <Folder Name="/consumers/">
+    <Project Path="consumers/homelab.api/Homelab.Api.csproj" />
+  </Folder>
+  <Folder Name="/core/">
+    <Project Path="core/homelab.application/Homelab.Application.csproj" />
+    <Project Path="core/homelab.domain/Homelab.Domain.csproj" />
+  </Folder>
+  <Folder Name="/infrastructure/">
+    <Project Path="infrastructure/homelab.data/Homelab.Data.csproj" Id="3c0c5844-aa5d-45e5-86b5-9eef73798349" />
+  </Folder>
+</Solution>

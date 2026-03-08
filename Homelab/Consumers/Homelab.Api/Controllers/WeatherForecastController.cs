@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace homelab.api.Controllers
+namespace Homelab.Api.Controllers
 {
     [ApiController]
     [Route("[controller]")]
