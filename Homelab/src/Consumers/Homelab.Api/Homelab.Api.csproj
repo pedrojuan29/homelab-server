@@ -16,6 +16,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\core\homelab.application\Homelab.Application.csproj" />
+    <ProjectReference Include="..\..\Infrastructure\Homelab.Data\Homelab.Data.csproj" />
   </ItemGroup>
 
 </Project>

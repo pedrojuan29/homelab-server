@@ -1,3 +1,5 @@
+using Homelab.Data.Persistence;
+
 var builder = WebApplication.CreateBuilder(args);
 
 //builder.Services.AddOpenApi();
@@ -6,6 +8,8 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddPostgreSqlPersistence(builder.Configuration);
 
 builder.Services.AddSwaggerGen(c =>
 {
@@ -28,6 +32,7 @@ if (app.Environment.IsDevelopment())
         c.RoutePrefix = string.Empty;
     });
 }
+
 
 app.UseHttpsRedirection();
 app.UseAuthorization();
